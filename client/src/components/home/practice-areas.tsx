@@ -2,110 +2,110 @@ import { Scale, Gavel, Building2, Briefcase, FileText, Users, Shield, Landmark, 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const practices = [
-  {
-    title: "Direito Penal",
-    description: "Defesa em inquéritos policiais e ações penais, atuando em crimes comuns e complexos com estratégia e técnica. Atuação em todas as fases processuais, desde a fase investigatória até recursos nos Tribunais Superiores.",
-    icon: Scale,
-    details: [
-      "Inquéritos policiais",
-      "Ações penais",
-      "Crimes comuns e complexos",
-      "Recursos e habeas corpus"
-    ]
-  },
-  {
-    title: "Direito Penal Militar",
-    description: "Especialistas na defesa de policiais militares, bombeiros militares e agentes de segurança pública em processos administrativos e judiciais. Atuação em IPM, Conselhos de Disciplina e crimes militares próprios e impróprios.",
-    icon: Shield,
-    details: [
-      "Defesa de PMs e Bombeiros",
-      "IPM e Conselhos de Disciplina",
-      "Crimes militares próprios/impróprios",
-      "Justiça Militar"
-    ]
-  },
-  {
-    title: "Tribunal do Júri",
-    description: "Mais de 100 julgamentos realizados. Atuação técnica, oratória forense e domínio da psicologia do julgamento. Especialização em crimes dolosos contra a vida, casos complexos e midiáticos.",
-    icon: Gavel,
-    details: [
-      "Mais de 100 Júris realizados",
-      "20+ anos de experiência",
-      "Crimes dolosos contra a vida",
-      "Casos complexos e midiáticos"
-    ]
-  },
-  {
-    title: "Direito Civil e Empresarial",
-    description: "Assessoria estratégica para grandes empresas, gestão de risco jurídico e contencioso cível. Atuação em responsabilidade civil, contratos e demandas estratégicas.",
-    icon: Building2,
-    details: [
-      "Contencioso estratégico",
-      "Responsabilidade civil",
-      "Contratos empresariais",
-      "Gestão de risco jurídico"
-    ]
-  },
-  {
-    title: "Direito Tributário",
-    description: "Defesa administrativa e judicial em matéria tributária para empresas nacionais e internacionais. Atuação em tributos federais, estaduais e municipais.",
-    icon: FileText,
-    details: [
-      "Defesa administrativa",
-      "Defesa judicial",
-      "Tributos federais, estaduais e municipais",
-      "Empresas nacionais e internacionais"
-    ]
-  },
-  {
-    title: "Direito do Trabalho",
-    description: "Defesa empresarial e consultoria preventiva em questões trabalhistas. Atuação estratégica em demandas trabalhistas e estruturação de relações de trabalho.",
-    icon: Briefcase,
-    details: [
-      "Defesa empresarial",
-      "Consultoria preventiva",
-      "Demandas trabalhistas",
-      "Estruturação de relações de trabalho"
-    ]
-  },
-  {
-    title: "Direito do Consumidor",
-    description: "Defesa judicial e administrativa de empresas e gestão de risco em relações de consumo. Atuação preventiva e contenciosa.",
-    icon: ShoppingCart,
-    details: [
-      "Defesa judicial e administrativa",
-      "Gestão de risco",
-      "Relações de consumo",
-      "Atuação preventiva"
-    ]
-  },
-  {
-    title: "Família Empresarial",
-    description: "Planejamento sucessório, estruturação de famílias empresárias e divórcios com repercussão empresarial. Atuação estratégica em questões familiares que envolvem patrimônio empresarial.",
-    icon: Home,
-    details: [
-      "Planejamento sucessório",
-      "Estruturação de famílias empresárias",
-      "Divórcios empresariais",
-      "Proteção patrimonial"
-    ]
-  },
-  {
-    title: "Público Municipal e Estadual",
-    description: "Assessoria a Municípios, Estados e Agentes Públicos. Atos administrativos, controle de legalidade e defesa em ações de natureza pública.",
-    icon: Landmark,
-    details: [
-      "Assessoria a Municípios e Estados",
-      "Atos administrativos",
-      "Controle de legalidade",
-      "Defesa de agentes públicos"
-    ]
-  },
-];
-
 export function PracticeAreas() {
   const { t } = useLanguage();
+  
+  const practices = [
+    {
+      title: t("practiceAreas.criminal"),
+      description: t("practiceAreas.criminalDesc"),
+      icon: Scale,
+      details: [
+        t("practiceAreas.criminalDetails.1"),
+        t("practiceAreas.criminalDetails.2"),
+        t("practiceAreas.criminalDetails.3"),
+        t("practiceAreas.criminalDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.military"),
+      description: t("practiceAreas.militaryDesc"),
+      icon: Shield,
+      details: [
+        t("practiceAreas.militaryDetails.1"),
+        t("practiceAreas.militaryDetails.2"),
+        t("practiceAreas.militaryDetails.3"),
+        t("practiceAreas.militaryDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.jury"),
+      description: t("practiceAreas.juryDesc"),
+      icon: Gavel,
+      details: [
+        t("practiceAreas.juryDetails.1"),
+        t("practiceAreas.juryDetails.2"),
+        t("practiceAreas.juryDetails.3"),
+        t("practiceAreas.juryDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.civil"),
+      description: t("practiceAreas.civilDesc"),
+      icon: Building2,
+      details: [
+        t("practiceAreas.civilDetails.1"),
+        t("practiceAreas.civilDetails.2"),
+        t("practiceAreas.civilDetails.3"),
+        t("practiceAreas.civilDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.tax"),
+      description: t("practiceAreas.taxDesc"),
+      icon: FileText,
+      details: [
+        t("practiceAreas.taxDetails.1"),
+        t("practiceAreas.taxDetails.2"),
+        t("practiceAreas.taxDetails.3"),
+        t("practiceAreas.taxDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.labor"),
+      description: t("practiceAreas.laborDesc"),
+      icon: Briefcase,
+      details: [
+        t("practiceAreas.laborDetails.1"),
+        t("practiceAreas.laborDetails.2"),
+        t("practiceAreas.laborDetails.3"),
+        t("practiceAreas.laborDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.consumer"),
+      description: t("practiceAreas.consumerDesc"),
+      icon: ShoppingCart,
+      details: [
+        t("practiceAreas.consumerDetails.1"),
+        t("practiceAreas.consumerDetails.2"),
+        t("practiceAreas.consumerDetails.3"),
+        t("practiceAreas.consumerDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.family"),
+      description: t("practiceAreas.familyDesc"),
+      icon: Home,
+      details: [
+        t("practiceAreas.familyDetails.1"),
+        t("practiceAreas.familyDetails.2"),
+        t("practiceAreas.familyDetails.3"),
+        t("practiceAreas.familyDetails.4")
+      ]
+    },
+    {
+      title: t("practiceAreas.public"),
+      description: t("practiceAreas.publicDesc"),
+      icon: Landmark,
+      details: [
+        t("practiceAreas.publicDetails.1"),
+        t("practiceAreas.publicDetails.2"),
+        t("practiceAreas.publicDetails.3"),
+        t("practiceAreas.publicDetails.4")
+      ]
+    },
+  ];
   
   return (
     <section id="practices" className="py-20 md:py-24 bg-muted/30">

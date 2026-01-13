@@ -4,33 +4,31 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const services = [
-  {
-    icon: Shield,
-    title: "Visão Sistêmica",
-    description: "Análise completa dos riscos jurídicos e desenvolvimento de estratégias integradas para proteção dos interesses empresariais.",
-  },
-  {
-    icon: Lock,
-    title: "Sigilo Absoluto",
-    description: "Compromisso com a confidencialidade e proteção de informações sensíveis, essenciais para grandes corporações.",
-  },
-  {
-    icon: Users,
-    title: "Governança e Compliance",
-    description: "Assessoria em conformidade regulatória, estruturação de programas de compliance e gestão de riscos jurídicos.",
-  },
-  {
-    icon: Globe,
-    title: "Atuação Nacional e Internacional",
-    description: "Capacidade de atender empresas com operações em múltiplos estados e países, com conhecimento das diferentes jurisdições.",
-  },
-];
-
-// practiceAreas será definido dentro do componente para usar traduções
-
 export function Enterprises() {
   const { t } = useLanguage();
+  
+  const services = [
+    {
+      icon: Shield,
+      title: t("enterprises.services.systemic.title"),
+      description: t("enterprises.services.systemic.description"),
+    },
+    {
+      icon: Lock,
+      title: t("enterprises.services.confidentiality.title"),
+      description: t("enterprises.services.confidentiality.description"),
+    },
+    {
+      icon: Users,
+      title: t("enterprises.services.governance.title"),
+      description: t("enterprises.services.governance.description"),
+    },
+    {
+      icon: Globe,
+      title: t("enterprises.services.international.title"),
+      description: t("enterprises.services.international.description"),
+    },
+  ];
   
   const practiceAreas = [
     t("enterprises.areas.civil"),

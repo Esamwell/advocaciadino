@@ -74,14 +74,77 @@
     "title": "Áreas de Atuação",
     "description": "Atuação multidisciplinar e especializada para oferecer soluções jurídicas completas e eficazes.",
     "criminal": "Direito Penal",
+    "criminalDesc": "Defesa em inquéritos policiais e ações penais, atuando em crimes comuns e complexos com estratégia e técnica. Atuação em todas as fases processuais, desde a fase investigatória até recursos nos Tribunais Superiores.",
+    "criminalDetails": {
+      "1": "Inquéritos policiais",
+      "2": "Ações penais",
+      "3": "Crimes comuns e complexos",
+      "4": "Recursos e habeas corpus"
+    },
     "military": "Direito Penal Militar",
+    "militaryDesc": "Especialistas na defesa de policiais militares, bombeiros militares e agentes de segurança pública em processos administrativos e judiciais. Atuação em IPM, Conselhos de Disciplina e crimes militares próprios e impróprios.",
+    "militaryDetails": {
+      "1": "Defesa de PMs e Bombeiros",
+      "2": "IPM e Conselhos de Disciplina",
+      "3": "Crimes militares próprios/impróprios",
+      "4": "Justiça Militar"
+    },
     "jury": "Tribunal do Júri",
+    "juryDesc": "Mais de 100 julgamentos realizados. Atuação técnica, oratória forense e domínio da psicologia do julgamento. Especialização em crimes dolosos contra a vida, casos complexos e midiáticos.",
+    "juryDetails": {
+      "1": "Mais de 100 Júris realizados",
+      "2": "20+ anos de experiência",
+      "3": "Crimes dolosos contra a vida",
+      "4": "Casos complexos e midiáticos"
+    },
     "civil": "Direito Civil e Empresarial",
+    "civilDesc": "Assessoria estratégica para grandes empresas, gestão de risco jurídico e contencioso cível. Atuação em responsabilidade civil, contratos e demandas estratégicas.",
+    "civilDetails": {
+      "1": "Contencioso estratégico",
+      "2": "Responsabilidade civil",
+      "3": "Contratos empresariais",
+      "4": "Gestão de risco jurídico"
+    },
     "tax": "Direito Tributário",
+    "taxDesc": "Defesa administrativa e judicial em matéria tributária para empresas nacionais e internacionais. Atuação em tributos federais, estaduais e municipais.",
+    "taxDetails": {
+      "1": "Defesa administrativa",
+      "2": "Defesa judicial",
+      "3": "Tributos federais, estaduais e municipais",
+      "4": "Empresas nacionais e internacionais"
+    },
     "labor": "Direito do Trabalho",
+    "laborDesc": "Defesa empresarial e consultoria preventiva em questões trabalhistas. Atuação estratégica em demandas trabalhistas e estruturação de relações de trabalho.",
+    "laborDetails": {
+      "1": "Defesa empresarial",
+      "2": "Consultoria preventiva",
+      "3": "Demandas trabalhistas",
+      "4": "Estruturação de relações de trabalho"
+    },
     "consumer": "Direito do Consumidor",
+    "consumerDesc": "Defesa judicial e administrativa de empresas e gestão de risco em relações de consumo. Atuação preventiva e contenciosa.",
+    "consumerDetails": {
+      "1": "Defesa judicial e administrativa",
+      "2": "Gestão de risco",
+      "3": "Relações de consumo",
+      "4": "Atuação preventiva"
+    },
     "family": "Família Empresarial",
-    "public": "Público Municipal e Estadual"
+    "familyDesc": "Planejamento sucessório, estruturação de famílias empresárias e divórcios com repercussão empresarial. Atuação estratégica em questões familiares que envolvem patrimônio empresarial.",
+    "familyDetails": {
+      "1": "Planejamento sucessório",
+      "2": "Estruturação de famílias empresárias",
+      "3": "Divórcios empresariais",
+      "4": "Proteção patrimonial"
+    },
+    "public": "Público Municipal e Estadual",
+    "publicDesc": "Assessoria a Municípios, Estados e Agentes Públicos. Atos administrativos, controle de legalidade e defesa em ações de natureza pública.",
+    "publicDetails": {
+      "1": "Assessoria a Municípios e Estados",
+      "2": "Atos administrativos",
+      "3": "Controle de legalidade",
+      "4": "Defesa de agentes públicos"
+    }
   },
   "superiorCourts": {
     "title": "Tribunais Superiores",
@@ -133,6 +196,24 @@
       "family": "Direito de Família Empresarial",
       "public": "Direito Público Municipal e Estadual",
       "compliance": "Gestão de Risco e Compliance"
+    },
+    "services": {
+      "systemic": {
+        "title": "Visão Sistêmica",
+        "description": "Análise completa dos riscos jurídicos e desenvolvimento de estratégias integradas para proteção dos interesses empresariais."
+      },
+      "confidentiality": {
+        "title": "Sigilo Absoluto",
+        "description": "Compromisso com a confidencialidade e proteção de informações sensíveis, essenciais para grandes corporações."
+      },
+      "governance": {
+        "title": "Governança e Compliance",
+        "description": "Assessoria em conformidade regulatória, estruturação de programas de compliance e gestão de riscos jurídicos."
+      },
+      "international": {
+        "title": "Atuação Nacional e Internacional",
+        "description": "Capacidade de atender empresas com operações em múltiplos estados e países, com conhecimento das diferentes jurisdições."
+      }
     }
   },
   "press": {

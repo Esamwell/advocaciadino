@@ -74,14 +74,77 @@
     "title": "Practice Areas",
     "description": "Multidisciplinary and specialized performance to offer complete and effective legal solutions.",
     "criminal": "Criminal Law",
+    "criminalDesc": "Defense in police inquiries and criminal actions, acting in common and complex crimes with strategy and technique. Performance in all procedural phases, from the investigative phase to appeals in Superior Courts.",
+    "criminalDetails": {
+      "1": "Police inquiries",
+      "2": "Criminal actions",
+      "3": "Common and complex crimes",
+      "4": "Appeals and habeas corpus"
+    },
     "military": "Military Criminal Law",
+    "militaryDesc": "Specialists in the defense of military police, military firefighters and public security agents in administrative and judicial processes. Performance in Military Police Inquiries (IPM), Disciplinary Councils and proper and improper military crimes.",
+    "militaryDetails": {
+      "1": "Defense of Military Police and Firefighters",
+      "2": "IPM and Disciplinary Councils",
+      "3": "Proper/improper military crimes",
+      "4": "Military Justice"
+    },
     "jury": "Jury Court",
+    "juryDesc": "More than 100 trials conducted. Technical performance, forensic oratory and mastery of trial psychology. Specialization in intentional crimes against life, complex and media-related cases.",
+    "juryDetails": {
+      "1": "More than 100 Jury trials conducted",
+      "2": "20+ years of experience",
+      "3": "Intentional crimes against life",
+      "4": "Complex and media-related cases"
+    },
     "civil": "Civil and Business Law",
+    "civilDesc": "Strategic advisory for large companies, legal risk management and civil litigation. Performance in civil liability, contracts and strategic demands.",
+    "civilDetails": {
+      "1": "Strategic litigation",
+      "2": "Civil liability",
+      "3": "Business contracts",
+      "4": "Legal risk management"
+    },
     "tax": "Tax Law",
+    "taxDesc": "Administrative and judicial defense in tax matters for national and international companies. Performance in federal, state and municipal taxes.",
+    "taxDetails": {
+      "1": "Administrative defense",
+      "2": "Judicial defense",
+      "3": "Federal, state and municipal taxes",
+      "4": "National and international companies"
+    },
     "labor": "Labor Law",
+    "laborDesc": "Business defense and preventive consulting on labor issues. Strategic performance in labor demands and structuring of labor relations.",
+    "laborDetails": {
+      "1": "Business defense",
+      "2": "Preventive consulting",
+      "3": "Labor demands",
+      "4": "Structuring of labor relations"
+    },
     "consumer": "Consumer Law",
+    "consumerDesc": "Judicial and administrative defense of companies and risk management in consumer relations. Preventive and contentious performance.",
+    "consumerDetails": {
+      "1": "Judicial and administrative defense",
+      "2": "Risk management",
+      "3": "Consumer relations",
+      "4": "Preventive performance"
+    },
     "family": "Business Family Law",
-    "public": "Municipal and State Public Law"
+    "familyDesc": "Succession planning, structuring of business families and divorces with business impact. Strategic performance in family matters involving business assets.",
+    "familyDetails": {
+      "1": "Succession planning",
+      "2": "Structuring of business families",
+      "3": "Business divorces",
+      "4": "Asset protection"
+    },
+    "public": "Municipal and State Public Law",
+    "publicDesc": "Advisory to Municipalities, States and Public Agents. Administrative acts, legality control and defense in public nature actions.",
+    "publicDetails": {
+      "1": "Advisory to Municipalities and States",
+      "2": "Administrative acts",
+      "3": "Legality control",
+      "4": "Defense of public agents"
+    }
   },
   "superiorCourts": {
     "title": "Superior Courts",
@@ -133,6 +196,24 @@
       "family": "Business Family Law",
       "public": "Municipal and State Public Law",
       "compliance": "Risk Management and Compliance"
+    },
+    "services": {
+      "systemic": {
+        "title": "Systemic Vision",
+        "description": "Complete analysis of legal risks and development of integrated strategies for the protection of business interests."
+      },
+      "confidentiality": {
+        "title": "Absolute Confidentiality",
+        "description": "Commitment to confidentiality and protection of sensitive information, essential for large corporations."
+      },
+      "governance": {
+        "title": "Governance and Compliance",
+        "description": "Advisory on regulatory compliance, structuring of compliance programs and management of legal risks."
+      },
+      "international": {
+        "title": "National and International Presence",
+        "description": "Ability to serve companies with operations in multiple states and countries, with knowledge of different jurisdictions."
+      }
     }
   },
   "press": {
