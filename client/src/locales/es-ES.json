@@ -214,6 +214,24 @@
         "title": "Actuación Nacional e Internacional",
         "description": "Capacidad de atender empresas con operaciones en múltiples estados y países, con conocimiento de las diferentes jurisdicciones."
       }
+    },
+    "businessAreas": {
+      "title": "Áreas de Práctica Empresarial"
+    },
+    "differentiators": {
+      "title": "Nuestros Diferenciadores",
+      "directService": {
+        "title": "Atención Directa por los Socios",
+        "description": "Acceso directo a los socios responsables, garantizando atención personalizada y decisiones estratégicas rápidas."
+      },
+      "multidisciplinary": {
+        "title": "Estructura Multidisciplinaria",
+        "description": "Cuerpo jurídico especializado en diversas áreas, permitiendo una visión integrada de los desafíos empresariales."
+      },
+      "complexCases": {
+        "title": "Experiencia en Casos Complejos",
+        "description": "Historial comprobado en demandas de alta complejidad y gran repercusión empresarial."
+      }
     }
   },
   "press": {

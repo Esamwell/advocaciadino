@@ -214,6 +214,24 @@
         "title": "National and International Presence",
         "description": "Ability to serve companies with operations in multiple states and countries, with knowledge of different jurisdictions."
       }
+    },
+    "businessAreas": {
+      "title": "Business Practice Areas"
+    },
+    "differentiators": {
+      "title": "Our Differentiators",
+      "directService": {
+        "title": "Direct Service by Partners",
+        "description": "Direct access to responsible partners, ensuring personalized attention and quick strategic decisions."
+      },
+      "multidisciplinary": {
+        "title": "Multidisciplinary Structure",
+        "description": "Legal team specialized in various areas, allowing an integrated view of business challenges."
+      },
+      "complexCases": {
+        "title": "Experience in Complex Cases",
+        "description": "Proven track record in highly complex demands and significant business impact."
+      }
     }
   },
   "press": {

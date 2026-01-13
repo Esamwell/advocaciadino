@@ -78,7 +78,7 @@ export function Enterprises() {
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                 <Building2 className="w-6 h-6 text-secondary" />
               </div>
-              <CardTitle className="text-2xl font-serif text-primary">Áreas de Atuação Empresarial</CardTitle>
+              <CardTitle className="text-2xl font-serif text-primary">{t("enterprises.businessAreas.title")}</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
@@ -97,7 +97,7 @@ export function Enterprises() {
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                 <FileCheck className="w-6 h-6 text-secondary" />
               </div>
-              <CardTitle className="text-2xl font-serif text-primary">Nossos Diferenciais</CardTitle>
+              <CardTitle className="text-2xl font-serif text-primary">{t("enterprises.differentiators.title")}</CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-4">
@@ -106,9 +106,9 @@ export function Enterprises() {
                     <span className="text-secondary text-xs font-bold">✓</span>
                   </div>
                   <div>
-                    <p className="font-medium text-foreground mb-1">Atendimento Direto pelos Sócios</p>
+                    <p className="font-medium text-foreground mb-1">{t("enterprises.differentiators.directService.title")}</p>
                     <p className="text-sm text-muted-foreground">
-                      Acesso direto aos sócios responsáveis, garantindo atenção personalizada e decisões estratégicas rápidas.
+                      {t("enterprises.differentiators.directService.description")}
                     </p>
                   </div>
                 </li>
@@ -117,9 +117,9 @@ export function Enterprises() {
                     <span className="text-secondary text-xs font-bold">✓</span>
                   </div>
                   <div>
-                    <p className="font-medium text-foreground mb-1">Estrutura Multidisciplinar</p>
+                    <p className="font-medium text-foreground mb-1">{t("enterprises.differentiators.multidisciplinary.title")}</p>
                     <p className="text-sm text-muted-foreground">
-                      Corpo jurídico especializado em diversas áreas, permitindo uma visão integrada dos desafios empresariais.
+                      {t("enterprises.differentiators.multidisciplinary.description")}
                     </p>
                   </div>
                 </li>
@@ -128,9 +128,9 @@ export function Enterprises() {
                     <span className="text-secondary text-xs font-bold">✓</span>
                   </div>
                   <div>
-                    <p className="font-medium text-foreground mb-1">Experiência em Casos Complexos</p>
+                    <p className="font-medium text-foreground mb-1">{t("enterprises.differentiators.complexCases.title")}</p>
                     <p className="text-sm text-muted-foreground">
-                      Histórico comprovado em demandas de alta complexidade e grande repercussão empresarial.
+                      {t("enterprises.differentiators.complexCases.description")}
                     </p>
                   </div>
                 </li>
