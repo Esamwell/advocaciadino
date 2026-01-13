@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "wouter";
 import heroBg from "@assets/generated_images/prestigious_law_firm_library_background.png";
 
 export function Hero() {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -33,20 +36,20 @@ export function Hero() {
               </h1>
               
               <p className="text-lg md:text-xl text-white/95 max-w-2xl mx-auto lg:mx-0 mb-4 leading-relaxed font-serif font-medium">
-                Defesa técnica, atuação estratégica e compromisso com a advocacia criminal e militar.
-              </p>
-              
-              <p className="text-sm md:text-base text-white/80 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-                Escritório jurídico sediado em Salvador/BA, com atuação destacada nas áreas de Direito Penal, Direito Penal Militar, Processo Penal, Processo Penal Militar, Direito Civil e Empresarial, Direito do Consumidor, Direito de Família Empresarial, Direito Tributário, Direito do Trabalho e Direitos Fundamentais. <strong className="text-white/95">Quase duas décadas de experiência profissional.</strong>
+                {t("hero.description")}
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white min-w-[200px] h-12 text-sm md:text-base font-medium shadow-md">
-                  Fale com um Especialista
-                </Button>
-                <Button size="lg" variant="outline" className="border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white backdrop-blur-sm min-w-[200px] h-12 text-sm md:text-base font-medium">
-                  Conheça o Escritório <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <Link href="/contato">
+                  <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white min-w-[200px] h-12 text-sm md:text-base font-medium shadow-md">
+                    {t("hero.cta")}
+                  </Button>
+                </Link>
+                <Link href="/sobre">
+                  <Button size="lg" variant="outline" className="border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white backdrop-blur-sm min-w-[200px] h-12 text-sm md:text-base font-medium">
+                    {t("hero.learnMore")} <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
               </div>
             </div>
 

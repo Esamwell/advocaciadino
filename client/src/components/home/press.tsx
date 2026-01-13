@@ -1,6 +1,7 @@
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Newspaper } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const pressItems = [
   {
@@ -27,13 +28,15 @@ const pressItems = [
 ];
 
 export function Press() {
+  const { t } = useLanguage();
+  
   return (
     <section id="press" className="py-20 md:py-24 bg-background">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 relative">
-          <span className="text-sm font-bold tracking-widest text-muted-foreground uppercase mb-2 block">Na Imprensa</span>
+          <span className="text-sm font-bold tracking-widest text-muted-foreground uppercase mb-2 block">{t("press.title")}</span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary relative inline-block px-6 md:px-8 bg-background z-10">
-            Reconhecimento e Visibilidade
+            {t("press.heading")}
           </h2>
           <div className="absolute top-1/2 left-0 w-full h-px bg-border -z-0" />
         </div>
@@ -41,9 +44,7 @@ export function Press() {
         <div className="bg-muted/30 rounded-lg p-6 md:p-8 mb-10 md:mb-12 max-w-3xl mx-auto text-center">
           <Newspaper className="w-12 h-12 text-secondary mx-auto mb-4" />
           <p className="text-muted-foreground leading-relaxed">
-            A atuação profissional e institucional de Dinoermeson Tiago dos Santos Nascimento é frequentemente 
-            acompanhada pela imprensa, especialmente em casos de grande repercussão. Todo conteúdo jornalístico 
-            respeita rigorosamente o sigilo profissional e as normas da OAB.
+            {t("press.description")}
           </p>
         </div>
 
@@ -74,7 +75,7 @@ export function Press() {
                   href="#" 
                   className="text-xs font-bold text-primary/60 uppercase tracking-widest group-hover:text-secondary transition-colors flex items-center gap-2"
                 >
-                  Ler mais <ExternalLink className="w-3 h-3" />
+                  {t("press.readMore")} <ExternalLink className="w-3 h-3" />
                 </a>
               </CardFooter>
             </Card>

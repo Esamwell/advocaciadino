@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "wouter";
 
 export function About() {
+  const { t } = useLanguage();
   return (
     <section id="about" className="py-20 md:py-24 bg-white">
       <div className="container px-4 md:px-6">
@@ -24,60 +27,60 @@ export function About() {
           </div>
 
           <div>
-            <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">O Escritório</span>
+            <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">{t("about.title")}</span>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4 leading-tight">
-              Compromisso com a defesa intransigente das garantias constitucionais.
+              {t("about.heading")}
             </h2>
             <p className="text-muted-foreground text-base md:text-lg mb-4 leading-relaxed">
-              A Advocacia Dinoermeson Nascimento nasce do compromisso com a defesa intransigente das garantias constitucionais, da legalidade e da dignidade da pessoa humana. Atuamos de forma estratégica, técnica e personalizada, oferecendo atendimento próximo e responsável a cada cliente.
+              {t("about.description1")}
             </p>
             <p className="text-muted-foreground text-base md:text-lg mb-6 leading-relaxed">
-              O escritório possui forte atuação na defesa de policiais militares, agentes de segurança pública e cidadãos submetidos a processos criminais complexos, bem como em demandas estratégicas que envolvem liberdade, honra e direitos fundamentais.
+              {t("about.description2")}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-6 p-4 md:p-6 bg-muted/50 rounded-lg">
               <div>
-                <h3 className="font-serif font-bold text-primary mb-2 text-lg">Missão</h3>
+                <h3 className="font-serif font-bold text-primary mb-2 text-lg">{t("about.mission")}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Exercer a advocacia com excelência técnica, coragem e responsabilidade, defendendo direitos fundamentais e garantindo justiça.
+                  {t("about.missionText")}
                 </p>
               </div>
               <div>
-                <h3 className="font-serif font-bold text-primary mb-2 text-lg">Visão</h3>
+                <h3 className="font-serif font-bold text-primary mb-2 text-lg">{t("about.vision")}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Ser referência regional em advocacia criminal e militar, reconhecida pela qualidade técnica e atuação ética.
+                  {t("about.visionText")}
                 </p>
               </div>
               <div>
-                <h3 className="font-serif font-bold text-primary mb-2 text-lg">Valores</h3>
+                <h3 className="font-serif font-bold text-primary mb-2 text-lg">{t("about.values")}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Ética, Legalidade, Lealdade ao cliente, Defesa intransigente das garantias constitucionais, Compromisso com a justiça.
+                  {t("about.valuesText")}
                 </p>
               </div>
             </div>
 
-            <h3 className="font-serif font-bold text-primary mb-3 text-lg md:text-xl">Diferenciais</h3>
+            <h3 className="font-serif font-bold text-primary mb-3 text-lg md:text-xl">{t("about.differentiators")}</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-6">
               {[
-                "Atendimento direto pelos sócios responsáveis",
-                "Atuação estratégica e personalizada",
-                "Corpo jurídico multidisciplinar e especialista",
-                "Forte experiência em casos sensíveis e de alta complexidade",
-                "Defesa técnica com linguagem clara e objetiva",
-                "Mais de 100 Júris Realizados"
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
+                t("about.differentiator1"),
+                t("about.differentiator2"),
+                t("about.differentiator3"),
+                t("about.differentiator4"),
+                t("about.differentiator5"),
+                t("about.differentiator6")
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                   <span className="text-foreground">{item}</span>
                 </li>
               ))}
             </ul>
 
-            <a href="/equipe">
+            <Link href="/equipe">
               <Button size="lg" className="bg-primary text-white hover:bg-primary/90">
-                Conheça Nossa Equipe
+                {t("about.cta")}
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

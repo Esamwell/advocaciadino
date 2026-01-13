@@ -1,5 +1,6 @@
 import { Scale, Gavel, Building2, Briefcase, FileText, Users, Shield, Landmark, ShoppingCart, Home } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const practices = [
   {
@@ -104,14 +105,16 @@ const practices = [
 ];
 
 export function PracticeAreas() {
+  const { t } = useLanguage();
+  
   return (
     <section id="practices" className="py-20 md:py-24 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">Áreas de Atuação</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">{t("practiceAreas.title")}</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-4 md:mb-6" />
           <p className="text-muted-foreground text-base md:text-lg">
-            Atuação multidisciplinar e especializada para oferecer soluções jurídicas completas e eficazes.
+            {t("practiceAreas.description")}
           </p>
         </div>
 

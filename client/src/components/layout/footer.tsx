@@ -2,12 +2,14 @@ import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucid
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { PrivacyPolicyModal } from "@/components/modals/privacy-policy";
 import { CodeOfEthicsModal } from "@/components/modals/code-of-ethics";
 
 export function Footer() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
   const [ethicsOpen, setEthicsOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <>
@@ -52,16 +54,16 @@ export function Footer() {
           <div>
              <ul className="space-y-2 text-sm text-white/70">
                {[
-                 { name: 'O Escritório', href: '/sobre' },
-                 { name: 'Nossa Equipe', href: '/equipe' },
-                 { name: 'Tribunal do Júri', href: '/tribunal-do-juri' },
-                 { name: 'Tribunais Superiores', href: '/tribunais-superiores' },
-                 { name: 'Empresas & Grandes Contas', href: '/empresas' },
-                 { name: 'Na Imprensa', href: '/imprensa' },
-                 { name: 'Áreas de Atuação', href: '/areas-de-atuacao' },
-                 { name: 'Contato', href: '/contato' }
-               ].map(item => (
-                 <li key={item.name}>
+                 { name: t('nav.about'), href: '/sobre' },
+                 { name: t('nav.team'), href: '/equipe' },
+                 { name: t('nav.jury'), href: '/tribunal-do-juri' },
+                 { name: t('nav.superiorCourts'), href: '/tribunais-superiores' },
+                 { name: t('nav.enterprises'), href: '/empresas' },
+                 { name: t('nav.press'), href: '/imprensa' },
+                 { name: t('nav.practiceAreas'), href: '/areas-de-atuacao' },
+                 { name: t('nav.contact'), href: '/contato' }
+               ].map((item, index) => (
+                 <li key={index}>
                    <Link 
                      href={item.href}
                      className="hover:text-secondary transition-colors cursor-pointer flex items-center gap-2"
@@ -92,24 +94,24 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-white/40 gap-4">
-          <p>Copyright © 2026 - Advocacia Dinoermeson Nascimento. Todos os Direitos Reservados.</p>
+          <p>{t("footer.copyright")}</p>
           <div className="flex gap-4">
             <button 
               onClick={() => setPrivacyOpen(true)}
               className="hover:text-white transition-colors cursor-pointer"
             >
-              Política de Privacidade
+              {t("footer.privacy")}
             </button>
             <button 
               onClick={() => setEthicsOpen(true)}
               className="hover:text-white transition-colors cursor-pointer"
             >
-              Código de Ética
+              {t("footer.ethics")}
             </button>
           </div>
         </div>
         <div className="mt-4 text-xs text-white/30 text-center">
-          <p>Todo o conteúdo institucional observa rigorosamente o Provimento nº 205/2021 do Conselho Federal da OAB, não realizando promessas de resultado ou mercantilização da advocacia.</p>
+          <p>{t("footer.compliance")}</p>
         </div>
       </div>
     </footer>

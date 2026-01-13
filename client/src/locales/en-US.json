@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "team": "Our Team",
+    "practiceAreas": "Practice Areas",
+    "superiorCourts": "Superior Courts",
+    "jury": "Jury Court",
+    "enterprises": "Enterprises",
+    "press": "Press",
+    "contact": "Contact",
+    "more": "More"
+  },
+  "hero": {
+    "badge": "Legal Excellence",
+    "title": "DINOERMESON NASCIMENTO LAW FIRM",
+    "subtitle": "SALVADOR • BAHIA",
+    "description": "Intransigent defense of constitutional guarantees, legality and human dignity. Strategic, technical and personalized performance.",
+    "cta": "Request Consultation",
+    "learnMore": "Learn More"
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "Commitment to the intransigent defense of constitutional guarantees.",
+    "description1": "Dinoermeson Nascimento Law Firm is born from the commitment to the intransigent defense of constitutional guarantees, legality and human dignity. We act strategically, technically and personalized, offering close and responsible service to each client.",
+    "description2": "The firm has a strong performance in defending military police officers, public security agents and citizens subjected to complex criminal processes, as well as strategic demands involving freedom, honor and fundamental rights.",
+    "mission": "Mission",
+    "missionText": "Practice law with technical excellence, courage and responsibility, defending fundamental rights and ensuring justice.",
+    "vision": "Vision",
+    "visionText": "To be a regional reference in criminal and military law, recognized for technical quality and ethical performance.",
+    "values": "Values",
+    "valuesText": "Ethics, Legality, Loyalty to the client, Intransigent defense of constitutional guarantees, Commitment to justice.",
+    "differentiators": "Differentiators",
+    "differentiator1": "Direct service by responsible partners",
+    "differentiator2": "Strategic and personalized performance",
+    "differentiator3": "Multidisciplinary and specialist legal team",
+    "differentiator4": "Strong experience in sensitive and highly complex cases",
+    "differentiator5": "Technical defense with clear and objective language",
+    "differentiator6": "More than 100 Jury Trials Conducted",
+    "cta": "Meet Our Team"
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "Partners and Legal Team",
+    "description": "Dinoermeson Nascimento Law Firm has a multidisciplinary and specialist legal team, offering direct service by responsible partners in each case.",
+    "multidisciplinary": "Multidisciplinary Legal Team",
+    "multidisciplinaryText": "Our technical team is composed of professionals specialized in various areas of law, ensuring a complete and strategic vision for each case. We work in an integrated way to offer effective and personalized legal solutions."
+  },
+  "practiceAreas": {
+    "title": "Practice Areas",
+    "description": "Multidisciplinary and specialized performance to offer complete and effective legal solutions."
+  },
+  "superiorCourts": {
+    "title": "Superior Courts",
+    "description": "Specialized performance before the Federal Supreme Court (STF) and Superior Court of Justice (STJ), with expertise in special appeals, extraordinary appeals and actions of a constitutional nature."
+  },
+  "jury": {
+    "title": "Jury Court & Plenary Advocacy",
+    "description1": "Performance in the Jury Court constitutes one of the central pillars of the firm. More than two decades of continuous experience and more than 100 trials conducted.",
+    "description2": "Specialization in intentional crimes against life, complex and media cases, with mastery of procedural technique, forensic oratory and trial psychology.",
+    "strategy": "Strategy",
+    "strategyText": "Development of personalized strategies for each case, considering procedural particularities and nuances of applicable material law.",
+    "oratory": "Oratory",
+    "oratoryText": "Mastery of forensic oratory, with the ability to communicate clearly, objectively and persuasively before the jury plenary.",
+    "technique": "Technique",
+    "techniqueText": "Deep knowledge of jury procedural technique, with attention to details that can make a difference in the final result."
+  },
+  "enterprises": {
+    "title": "Enterprises & Large Accounts",
+    "heading": "Strategic Legal Advisory for Large Companies",
+    "description": "The firm has the structure and expertise to serve large national and international companies, offering strategic and contentious legal advisory with a focus on results and efficiency.",
+    "cta": "Your Company Deserves Legal Excellence",
+    "ctaText": "Contact us to learn how we can help your company with strategic legal advisory, specialized litigation and legal risk management.",
+    "button": "Request Proposal"
+  },
+  "press": {
+    "title": "Press",
+    "heading": "Recognition and Visibility",
+    "description": "The professional and institutional performance of Dinoermeson Tiago dos Santos Nascimento is frequently followed by the press, especially in cases of great repercussion. All journalistic content strictly respects professional secrecy and OAB standards.",
+    "readMore": "Read more"
+  },
+  "contact": {
+    "title": "Contact",
+    "heading": "We are ready to defend your interests.",
+    "description": "Contact us to schedule a specialized consultation. Our team will return your contact as soon as possible.",
+    "phone": "Phone",
+    "email": "E-mail",
+    "location": "Location",
+    "form": {
+      "name": "Full Name",
+      "email": "E-mail",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "ethics": "Code of Ethics",
+    "copyright": "Copyright © 2026 - Dinoermeson Nascimento Law Firm. All Rights Reserved.",
+    "compliance": "All institutional content strictly observes Provision No. 205/2021 of the Federal Council of the OAB, not making promises of results or commercialization of advocacy."
+  }
+}
+

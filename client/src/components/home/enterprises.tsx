@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Shield, Lock, Users, Globe, FileCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const services = [
   {
@@ -37,18 +38,19 @@ const practiceAreas = [
 ];
 
 export function Enterprises() {
+  const { t } = useLanguage();
+  
   return (
     <section id="enterprises" className="py-20 md:py-24 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
-          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Empresas & Grandes Contas</span>
+          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">{t("enterprises.title")}</span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">
-            Assessoria Jurídica Estratégica para Grandes Empresas
+            {t("enterprises.heading")}
           </h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-4 md:mb-6" />
           <p className="text-muted-foreground text-base md:text-lg">
-            O escritório possui estrutura e expertise para atender grandes empresas nacionais e internacionais, 
-            oferecendo assessoria jurídica estratégica e contenciosa com foco em resultados e eficiência.
+            {t("enterprises.description")}
           </p>
         </div>
 
@@ -139,14 +141,13 @@ export function Enterprises() {
 
         <div className="bg-primary text-white rounded-lg p-8 md:p-12 text-center">
           <Building2 className="w-12 h-12 text-secondary mx-auto mb-4" />
-          <h3 className="text-2xl font-serif font-bold mb-4">Sua Empresa Merece Excelência Jurídica</h3>
+          <h3 className="text-2xl font-serif font-bold mb-4">{t("enterprises.cta")}</h3>
           <p className="text-white/80 max-w-2xl mx-auto mb-6 leading-relaxed">
-            Entre em contato para conhecer como podemos ajudar sua empresa com assessoria jurídica estratégica, 
-            contencioso especializado e gestão de riscos jurídicos.
+            {t("enterprises.ctaText")}
           </p>
           <Link href="/contato">
             <Button className="bg-secondary hover:bg-secondary/90 text-white">
-              Solicitar Proposta
+              {t("enterprises.button")}
             </Button>
           </Link>
         </div>

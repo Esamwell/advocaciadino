@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "O Escritório",
+    "team": "Nossa Equipe",
+    "practiceAreas": "Áreas de Atuação",
+    "superiorCourts": "Tribunais Superiores",
+    "jury": "Tribunal do Júri",
+    "enterprises": "Empresas",
+    "press": "Na Imprensa",
+    "contact": "Contato",
+    "more": "Mais"
+  },
+  "hero": {
+    "badge": "Advocacia de Excelência",
+    "title": "ADVOCACIA DINOERMESON NASCIMENTO",
+    "subtitle": "SALVADOR • BAHIA",
+    "description": "Defesa intransigente das garantias constitucionais, da legalidade e da dignidade da pessoa humana. Atuação estratégica, técnica e personalizada.",
+    "cta": "Solicitar Atendimento",
+    "learnMore": "Conheça Mais"
+  },
+  "about": {
+    "title": "O Escritório",
+    "heading": "Compromisso com a defesa intransigente das garantias constitucionais.",
+    "description1": "A Advocacia Dinoermeson Nascimento nasce do compromisso com a defesa intransigente das garantias constitucionais, da legalidade e da dignidade da pessoa humana. Atuamos de forma estratégica, técnica e personalizada, oferecendo atendimento próximo e responsável a cada cliente.",
+    "description2": "O escritório possui forte atuação na defesa de policiais militares, agentes de segurança pública e cidadãos submetidos a processos criminais complexos, bem como em demandas estratégicas que envolvem liberdade, honra e direitos fundamentais.",
+    "mission": "Missão",
+    "missionText": "Exercer a advocacia com excelência técnica, coragem e responsabilidade, defendendo direitos fundamentais e garantindo justiça.",
+    "vision": "Visão",
+    "visionText": "Ser referência regional em advocacia criminal e militar, reconhecida pela qualidade técnica e atuação ética.",
+    "values": "Valores",
+    "valuesText": "Ética, Legalidade, Lealdade ao cliente, Defesa intransigente das garantias constitucionais, Compromisso com a justiça.",
+    "differentiators": "Diferenciais",
+    "differentiator1": "Atendimento direto pelos sócios responsáveis",
+    "differentiator2": "Atuação estratégica e personalizada",
+    "differentiator3": "Corpo jurídico multidisciplinar e especialista",
+    "differentiator4": "Forte experiência em casos sensíveis e de alta complexidade",
+    "differentiator5": "Defesa técnica com linguagem clara e objetiva",
+    "differentiator6": "Mais de 100 Júris Realizados",
+    "cta": "Conheça Nossa Equipe"
+  },
+  "team": {
+    "title": "Nossa Equipe",
+    "subtitle": "Sócios e Corpo Jurídico",
+    "description": "A Advocacia Dinoermeson Nascimento conta com um corpo jurídico multidisciplinar e especialista, oferecendo atendimento direto pelos sócios responsáveis em cada caso.",
+    "multidisciplinary": "Corpo Jurídico Multidisciplinar",
+    "multidisciplinaryText": "Nossa equipe técnica é composta por profissionais especializados em diversas áreas do direito, garantindo uma visão completa e estratégica para cada caso. Trabalhamos de forma integrada para oferecer soluções jurídicas eficazes e personalizadas."
+  },
+  "practiceAreas": {
+    "title": "Áreas de Atuação",
+    "description": "Atuação multidisciplinar e especializada para oferecer soluções jurídicas completas e eficazes."
+  },
+  "superiorCourts": {
+    "title": "Tribunais Superiores",
+    "description": "Atuação especializada perante o Supremo Tribunal Federal (STF) e Superior Tribunal de Justiça (STJ), com expertise em recursos especiais, recursos extraordinários e ações de natureza constitucional."
+  },
+  "jury": {
+    "title": "Tribunal do Júri & Advocacia de Plenário",
+    "description1": "A atuação no Tribunal do Júri constitui um dos pilares centrais do escritório. Mais de duas décadas de experiência contínua e mais de 100 julgamentos realizados.",
+    "description2": "Especialização em crimes dolosos contra a vida, casos complexos e midiáticos, com domínio da técnica processual, oratória forense e psicologia do julgamento.",
+    "strategy": "Estratégia",
+    "strategyText": "Desenvolvimento de estratégias personalizadas para cada caso, considerando as particularidades processuais e as nuances do direito material aplicável.",
+    "oratory": "Oratória",
+    "oratoryText": "Domínio da oratória forense, com capacidade de comunicação clara, objetiva e persuasiva perante o plenário do júri.",
+    "technique": "Técnica",
+    "techniqueText": "Conhecimento profundo da técnica processual do júri, com atenção aos detalhes que podem fazer a diferença no resultado final."
+  },
+  "enterprises": {
+    "title": "Empresas & Grandes Contas",
+    "heading": "Assessoria Jurídica Estratégica para Grandes Empresas",
+    "description": "O escritório possui estrutura e expertise para atender grandes empresas nacionais e internacionais, oferecendo assessoria jurídica estratégica e contenciosa com foco em resultados e eficiência.",
+    "cta": "Sua Empresa Merece Excelência Jurídica",
+    "ctaText": "Entre em contato para conhecer como podemos ajudar sua empresa com assessoria jurídica estratégica, contencioso especializado e gestão de riscos jurídicos.",
+    "button": "Solicitar Proposta"
+  },
+  "press": {
+    "title": "Na Imprensa",
+    "heading": "Reconhecimento e Visibilidade",
+    "description": "A atuação profissional e institucional de Dinoermeson Tiago dos Santos Nascimento é frequentemente acompanhada pela imprensa, especialmente em casos de grande repercussão. Todo conteúdo jornalístico respeita rigorosamente o sigilo profissional e as normas da OAB.",
+    "readMore": "Ler mais"
+  },
+  "contact": {
+    "title": "Contato",
+    "heading": "Estamos prontos para defender seus interesses.",
+    "description": "Entre em contato para agendar um atendimento especializado. Nossa equipe retornará seu contato o mais breve possível.",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "location": "Localização",
+    "form": {
+      "name": "Nome Completo",
+      "email": "E-mail",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar Mensagem"
+    }
+  },
+  "footer": {
+    "privacy": "Política de Privacidade",
+    "ethics": "Código de Ética",
+    "copyright": "Copyright © 2026 - Advocacia Dinoermeson Nascimento. Todos os Direitos Reservados.",
+    "compliance": "Todo o conteúdo institucional observa rigorosamente o Provimento nº 205/2021 do Conselho Federal da OAB, não realizando promessas de resultado ou mercantilização da advocacia."
+  }
+}
+

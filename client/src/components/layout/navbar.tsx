@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageSelector } from "@/components/ui/language-selector";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,6 +16,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [location] = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,14 +27,14 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "O Escritório", href: "/sobre" },
-    { name: "Nossa Equipe", href: "/equipe" },
-    { name: "Tribunais Superiores", href: "/tribunais-superiores" },
-    { name: "Tribunal do Júri", href: "/tribunal-do-juri" },
-    { name: "Empresas", href: "/empresas" },
-    { name: "Na Imprensa", href: "/imprensa" },
-    { name: "Contato", href: "/contato" },
+    { name: t("nav.home"), href: "/" },
+    { name: t("nav.about"), href: "/sobre" },
+    { name: t("nav.team"), href: "/equipe" },
+    { name: t("nav.superiorCourts"), href: "/tribunais-superiores" },
+    { name: t("nav.jury"), href: "/tribunal-do-juri" },
+    { name: t("nav.enterprises"), href: "/empresas" },
+    { name: t("nav.press"), href: "/imprensa" },
+    { name: t("nav.contact"), href: "/contato" },
   ];
 
   const practiceAreas = [
@@ -90,7 +93,7 @@ export function Navbar() {
                 isScrolled ? "text-foreground" : "text-white/90 hover:text-white"
               )}
             >
-              Áreas
+              {t("nav.practiceAreas")}
               <ChevronDown className="w-3 h-3 xl:w-4 xl:h-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-64">
@@ -125,7 +128,7 @@ export function Navbar() {
                 isScrolled ? "text-foreground" : "text-white/90 hover:text-white"
               )}
             >
-              Mais
+              {t("nav.more")}
               <ChevronDown className="w-3 h-3 xl:w-4 xl:h-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-48">
@@ -143,9 +146,15 @@ export function Navbar() {
             <Button 
               className="bg-secondary hover:bg-secondary/90 text-white font-medium px-4 xl:px-6 text-xs xl:text-sm whitespace-nowrap"
             >
-              Contato
+              {t("nav.contact")}
             </Button>
           </Link>
+          
+          <LanguageSelector 
+            className={cn(
+              isScrolled ? "text-foreground" : "text-white/90"
+            )}
+          />
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -171,7 +180,7 @@ export function Navbar() {
             </Link>
           ))}
           <div className="py-3 border-b border-border/50">
-            <p className="text-lg font-medium mb-2">Áreas de Atuação</p>
+            <p className="text-lg font-medium mb-2">{t("nav.practiceAreas")}</p>
             <div className="pl-4 space-y-2">
               {practiceAreas.map((area) => (
                 <Link
@@ -189,9 +198,13 @@ export function Navbar() {
             <Button 
               className="mt-4 w-full bg-secondary text-white hover:bg-secondary/90"
             >
-              Solicitar Atendimento
+              {t("hero.cta")}
             </Button>
           </Link>
+          
+          <div className="mt-4 pt-4 border-t border-border/50">
+            <LanguageSelector />
+          </div>
         </div>
       )}
     </nav>

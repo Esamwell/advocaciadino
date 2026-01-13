@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, GraduationCap, Users, BookOpen } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const teamMembers = [
   {
@@ -28,16 +29,17 @@ const teamMembers = [
 ];
 
 export function Team() {
+  const { t } = useLanguage();
+  
   return (
     <section id="team" className="py-20 md:py-24 bg-background">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
-          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Nossa Equipe</span>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">Sócios e Corpo Jurídico</h2>
+          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">{t("team.title")}</span>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">{t("team.subtitle")}</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-4 md:mb-6" />
           <p className="text-muted-foreground text-base md:text-lg">
-            A Advocacia Dinoermeson Nascimento conta com um corpo jurídico multidisciplinar e especialista, 
-            oferecendo atendimento direto pelos sócios responsáveis em cada caso.
+            {t("team.description")}
           </p>
         </div>
 
@@ -83,11 +85,9 @@ export function Team() {
 
         <div className="bg-muted/50 rounded-lg p-8 text-center">
           <GraduationCap className="w-12 h-12 text-secondary mx-auto mb-4" />
-          <h3 className="text-xl font-serif font-bold text-primary mb-3">Corpo Jurídico Multidisciplinar</h3>
+          <h3 className="text-xl font-serif font-bold text-primary mb-3">{t("team.multidisciplinary")}</h3>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Nossa equipe técnica é composta por profissionais especializados em diversas áreas do direito, 
-            garantindo uma visão completa e estratégica para cada caso. Trabalhamos de forma integrada 
-            para oferecer soluções jurídicas eficazes e personalizadas.
+            {t("team.multidisciplinaryText")}
           </p>
         </div>
       </div>

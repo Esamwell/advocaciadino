@@ -1,18 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Scale, FileText, Shield, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "wouter";
 
 export function SuperiorCourts() {
+  const { t } = useLanguage();
+  
   return (
     <section id="superior-courts" className="py-20 md:py-24 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
-          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Tribunais Superiores</span>
+          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">{t("superiorCourts.title")}</span>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">Atuação no STF e STJ</h2>
           <div className="w-24 h-1 bg-secondary mx-auto mb-4 md:mb-6" />
           <p className="text-muted-foreground text-base md:text-lg">
-            Especialidade em sustentações orais exitosas, Habeas Corpus e Recursos Constitucionais. 
-            Reversão de decisões, reconhecimento de nulidades e proteção de direitos fundamentais.
+            {t("superiorCourts.description")}
           </p>
         </div>
 
@@ -83,9 +86,11 @@ export function SuperiorCourts() {
             Nossa atuação nos Tribunais Superiores tem como objetivo principal a proteção de direitos fundamentais, 
             a reversão de decisões injustas e o reconhecimento de nulidades que violam garantias constitucionais.
           </p>
-          <Button className="bg-secondary hover:bg-secondary/90 text-white">
-            Entre em Contato
-          </Button>
+          <Link href="/contato">
+            <Button className="bg-secondary hover:bg-secondary/90 text-white">
+              {t("nav.contact")}
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
