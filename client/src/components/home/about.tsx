@@ -73,12 +73,11 @@ export function About() {
               ))}
             </ul>
 
-            <Button size="lg" className="bg-primary text-white hover:bg-primary/90" onClick={() => {
-              const element = document.getElementById('team');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}>
-              Conheça Nossa Equipe
-            </Button>
+            <a href="/equipe">
+              <Button size="lg" className="bg-primary text-white hover:bg-primary/90">
+                Conheça Nossa Equipe
+              </Button>
+            </a>
           </div>
         </div>
       </div>

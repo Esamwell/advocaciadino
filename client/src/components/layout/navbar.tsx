@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -13,6 +13,7 @@ import {
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,26 +25,26 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "O Escritório", href: "#about" },
-    { name: "Nossa Equipe", href: "#team" },
-    { name: "Tribunais Superiores", href: "#superior-courts" },
-    { name: "Tribunal do Júri", href: "#jury" },
-    { name: "Empresas", href: "#enterprises" },
-    { name: "Na Imprensa", href: "#press" },
-    { name: "Contato", href: "#contact" },
+    { name: "O Escritório", href: "/sobre" },
+    { name: "Nossa Equipe", href: "/equipe" },
+    { name: "Tribunais Superiores", href: "/tribunais-superiores" },
+    { name: "Tribunal do Júri", href: "/tribunal-do-juri" },
+    { name: "Empresas", href: "/empresas" },
+    { name: "Na Imprensa", href: "/imprensa" },
+    { name: "Contato", href: "/contato" },
   ];
 
   const practiceAreas = [
-    { name: "Direito Penal", href: "#practices" },
-    { name: "Direito Penal Militar", href: "#practices" },
-    { name: "Tribunal do Júri", href: "#jury" },
-    { name: "Tribunais Superiores", href: "#superior-courts" },
-    { name: "Civil e Empresarial", href: "#practices" },
-    { name: "Direito Tributário", href: "#practices" },
-    { name: "Direito do Trabalho", href: "#practices" },
-    { name: "Direito do Consumidor", href: "#practices" },
-    { name: "Família Empresarial", href: "#practices" },
-    { name: "Público Municipal e Estadual", href: "#practices" },
+    { name: "Direito Penal", href: "/areas-de-atuacao" },
+    { name: "Direito Penal Militar", href: "/areas-de-atuacao" },
+    { name: "Tribunal do Júri", href: "/tribunal-do-juri" },
+    { name: "Tribunais Superiores", href: "/tribunais-superiores" },
+    { name: "Civil e Empresarial", href: "/areas-de-atuacao" },
+    { name: "Direito Tributário", href: "/areas-de-atuacao" },
+    { name: "Direito do Trabalho", href: "/areas-de-atuacao" },
+    { name: "Direito do Consumidor", href: "/areas-de-atuacao" },
+    { name: "Família Empresarial", href: "/areas-de-atuacao" },
+    { name: "Público Municipal e Estadual", href: "/areas-de-atuacao" },
   ];
 
   return (
@@ -68,16 +69,17 @@ export function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-4 xl:gap-6">
           {navLinks.slice(0, 2).map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className={cn(
-                "text-xs xl:text-sm font-medium hover:text-secondary transition-colors uppercase tracking-wider whitespace-nowrap",
-                isScrolled ? "text-foreground" : "text-white/90 hover:text-white"
+                "text-xs xl:text-sm font-medium hover:text-secondary transition-colors uppercase tracking-wider whitespace-nowrap cursor-pointer",
+                isScrolled ? "text-foreground" : "text-white/90 hover:text-white",
+                location === link.href && "text-secondary"
               )}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           
           {/* Áreas de Atuação Dropdown */}
@@ -94,32 +96,26 @@ export function Navbar() {
             <DropdownMenuContent align="start" className="w-64">
               {practiceAreas.map((area) => (
                 <DropdownMenuItem key={area.name} asChild>
-                  <a
-                    href={area.href}
-                    className="cursor-pointer"
-                    onClick={() => {
-                      const element = document.querySelector(area.href);
-                      element?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                  >
+                  <Link href={area.href} className="cursor-pointer">
                     {area.name}
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
 
           {navLinks.slice(2, 5).map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className={cn(
-                "text-xs xl:text-sm font-medium hover:text-secondary transition-colors uppercase tracking-wider whitespace-nowrap",
-                isScrolled ? "text-foreground" : "text-white/90 hover:text-white"
+                "text-xs xl:text-sm font-medium hover:text-secondary transition-colors uppercase tracking-wider whitespace-nowrap cursor-pointer",
+                isScrolled ? "text-foreground" : "text-white/90 hover:text-white",
+                location === link.href && "text-secondary"
               )}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           
           <DropdownMenu>
@@ -135,30 +131,21 @@ export function Navbar() {
             <DropdownMenuContent align="end" className="w-48">
               {navLinks.slice(5).map((link) => (
                 <DropdownMenuItem key={link.name} asChild>
-                  <a
-                    href={link.href}
-                    className="cursor-pointer"
-                    onClick={() => {
-                      const element = document.querySelector(link.href);
-                      element?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                  >
+                  <Link href={link.href} className="cursor-pointer">
                     {link.name}
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
           
-          <Button 
-            className="bg-secondary hover:bg-secondary/90 text-white font-medium px-4 xl:px-6 text-xs xl:text-sm whitespace-nowrap"
-            onClick={() => {
-              const element = document.getElementById('contact');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Contato
-          </Button>
+          <Link href="/contato">
+            <Button 
+              className="bg-secondary hover:bg-secondary/90 text-white font-medium px-4 xl:px-6 text-xs xl:text-sm whitespace-nowrap"
+            >
+              Contato
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -174,40 +161,37 @@ export function Navbar() {
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-background border-b border-border md:hidden flex flex-col p-6 shadow-xl animate-in slide-in-from-top-5 max-h-[90vh] overflow-y-auto">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
-              className="py-3 text-lg font-medium border-b border-border/50 last:border-0 hover:text-secondary transition-colors"
+              className="py-3 text-lg font-medium border-b border-border/50 last:border-0 hover:text-secondary transition-colors cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <div className="py-3 border-b border-border/50">
             <p className="text-lg font-medium mb-2">Áreas de Atuação</p>
             <div className="pl-4 space-y-2">
               {practiceAreas.map((area) => (
-                <a
+                <Link
                   key={area.name}
                   href={area.href}
-                  className="block text-sm text-muted-foreground hover:text-secondary transition-colors"
+                  className="block text-sm text-muted-foreground hover:text-secondary transition-colors cursor-pointer"
                   onClick={() => setIsOpen(false)}
                 >
                   {area.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
-          <Button 
-            className="mt-4 w-full bg-secondary text-white hover:bg-secondary/90"
-            onClick={() => {
-              setIsOpen(false);
-              const element = document.getElementById('contact');
-              element?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Solicitar Atendimento
-          </Button>
+          <Link href="/contato" onClick={() => setIsOpen(false)}>
+            <Button 
+              className="mt-4 w-full bg-secondary text-white hover:bg-secondary/90"
+            >
+              Solicitar Atendimento
+            </Button>
+          </Link>
         </div>
       )}
     </nav>

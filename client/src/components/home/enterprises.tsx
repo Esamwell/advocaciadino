@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Shield, Lock, Users, Globe, FileCheck, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 const services = [
   {
@@ -143,12 +144,11 @@ export function Enterprises() {
             Entre em contato para conhecer como podemos ajudar sua empresa com assessoria jurídica estratégica, 
             contencioso especializado e gestão de riscos jurídicos.
           </p>
-          <Button className="bg-secondary hover:bg-secondary/90 text-white" onClick={() => {
-            const element = document.getElementById('contact');
-            element?.scrollIntoView({ behavior: 'smooth' });
-          }}>
-            Solicitar Proposta
-          </Button>
+          <Link href="/contato">
+            <Button className="bg-secondary hover:bg-secondary/90 text-white">
+              Solicitar Proposta
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

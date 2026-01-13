@@ -8,8 +8,10 @@ import { About } from "@/components/home/about";
 import { Contact } from "@/components/home/contact";
 import { Team } from "@/components/home/team";
 import { SuperiorCourts } from "@/components/home/superior-courts";
+import { useScrollToSection } from "@/hooks/useScrollToSection";
 
 export default function Home() {
+  useScrollToSection();
   return (
     <div className="min-h-screen bg-background font-sans text-foreground selection:bg-secondary/30">
       <Navbar />

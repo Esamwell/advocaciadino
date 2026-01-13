@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Link } from "wouter";
 import { PrivacyPolicyModal } from "@/components/modals/privacy-policy";
 import { CodeOfEthicsModal } from "@/components/modals/code-of-ethics";
 
@@ -51,22 +52,22 @@ export function Footer() {
           <div>
              <ul className="space-y-2 text-sm text-white/70">
                {[
-                 { name: 'O Escritório', href: '#about' },
-                 { name: 'Nossa Equipe', href: '#team' },
-                 { name: 'Tribunal do Júri', href: '#jury' },
-                 { name: 'Tribunais Superiores', href: '#superior-courts' },
-                 { name: 'Empresas & Grandes Contas', href: '#enterprises' },
-                 { name: 'Na Imprensa', href: '#press' },
-                 { name: 'Áreas de Atuação', href: '#practices' },
-                 { name: 'Contato', href: '#contact' }
+                 { name: 'O Escritório', href: '/sobre' },
+                 { name: 'Nossa Equipe', href: '/equipe' },
+                 { name: 'Tribunal do Júri', href: '/tribunal-do-juri' },
+                 { name: 'Tribunais Superiores', href: '/tribunais-superiores' },
+                 { name: 'Empresas & Grandes Contas', href: '/empresas' },
+                 { name: 'Na Imprensa', href: '/imprensa' },
+                 { name: 'Áreas de Atuação', href: '/areas-de-atuacao' },
+                 { name: 'Contato', href: '/contato' }
                ].map(item => (
                  <li key={item.name}>
-                   <a 
+                   <Link 
                      href={item.href}
                      className="hover:text-secondary transition-colors cursor-pointer flex items-center gap-2"
                    >
                      <span className="text-secondary text-xs">→</span> {item.name}
-                   </a>
+                   </Link>
                  </li>
                ))}
              </ul>
