@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "wouter";
@@ -25,9 +25,36 @@ export function Footer() {
             />
             <p className="text-sm text-white/60 mb-6">Salvador • Bahia</p>
             <div className="flex gap-4 mt-6">
-              <Button size="icon" variant="ghost" className="hover:text-secondary hover:bg-white/5"><Facebook className="w-5 h-5" /></Button>
-              <Button size="icon" variant="ghost" className="hover:text-secondary hover:bg-white/5"><Instagram className="w-5 h-5" /></Button>
-              <Button size="icon" variant="ghost" className="hover:text-secondary hover:bg-white/5"><Linkedin className="w-5 h-5" /></Button>
+              <a 
+                href="https://www.facebook.com/dtsnadvocacia?mibextid=ZbWKwL" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <Button size="icon" variant="ghost" className="hover:text-secondary hover:bg-white/5">
+                  <Facebook className="w-5 h-5" />
+                </Button>
+              </a>
+              <a 
+                href="https://www.instagram.com/dinoermesonadv/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Button size="icon" variant="ghost" className="hover:text-secondary hover:bg-white/5">
+                  <Instagram className="w-5 h-5" />
+                </Button>
+              </a>
+              <a 
+                href="https://api.whatsapp.com/message/UY62FE5BEOPPD1?autoload=1&app_absent=0" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <Button size="icon" variant="ghost" className="hover:text-secondary hover:bg-white/5">
+                  <MessageCircle className="w-5 h-5" />
+                </Button>
+              </a>
             </div>
           </div>
 

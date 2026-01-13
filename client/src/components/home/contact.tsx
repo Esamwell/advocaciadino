@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Clock, MessageSquare, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageSquare, Send, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Contact() {
@@ -29,6 +29,24 @@ export function Contact() {
                   <h4 className="font-serif font-bold text-primary text-lg">{t("contact.phone")}</h4>
                   <p className="text-muted-foreground">(71) XXXX-XXXX</p>
                   <p className="text-sm text-muted-foreground/80 mt-1">OAB/BA nº 36.408</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/5 flex items-center justify-center shrink-0">
+                  <MessageCircle className="w-6 h-6 text-secondary" />
+                </div>
+                <div>
+                  <h4 className="font-serif font-bold text-primary text-lg">WhatsApp</h4>
+                  <a 
+                    href="https://api.whatsapp.com/message/UY62FE5BEOPPD1?autoload=1&app_absent=0" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-secondary transition-colors inline-flex items-center gap-2"
+                  >
+                    Fale conosco pelo WhatsApp
+                    <MessageCircle className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
 

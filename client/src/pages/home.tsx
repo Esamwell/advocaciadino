@@ -8,6 +8,7 @@ import { About } from "@/components/home/about";
 import { Contact } from "@/components/home/contact";
 import { Team } from "@/components/home/team";
 import { SuperiorCourts } from "@/components/home/superior-courts";
+import { WhatsAppButton } from "@/components/ui/whatsapp-button";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -76,6 +77,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

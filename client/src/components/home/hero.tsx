@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 import heroBg from "@assets/generated_images/prestigious_law_firm_library_background.png";
@@ -40,11 +40,15 @@ export function Hero() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
-                <Link href="/contato">
+                <a 
+                  href="https://api.whatsapp.com/message/UY62FE5BEOPPD1?autoload=1&app_absent=0" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white min-w-[200px] h-12 text-sm md:text-base font-medium shadow-md">
-                    {t("hero.cta")}
+                    {t("hero.cta")} <MessageCircle className="ml-2 w-4 h-4" />
                   </Button>
-                </Link>
+                </a>
                 <Link href="/sobre">
                   <Button size="lg" variant="outline" className="border border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white backdrop-blur-sm min-w-[200px] h-12 text-sm md:text-base font-medium">
                     {t("hero.learnMore")} <ArrowRight className="ml-2 w-4 h-4" />
