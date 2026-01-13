@@ -38,13 +38,14 @@ export default function Home() {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 lg:gap-8 max-w-4xl mx-auto mb-10 md:mb-12">
                {[
-                 { label: "20+", value: "20+" },
-                 { label: "100+", value: "100+" },
-                 { label: "12", value: "12" },
-                 { label: "500+", value: "500+" }
+                 { value: "20+", label: t("hero.stats.years") },
+                 { value: "100+", label: t("hero.stats.juries") },
+                 { value: "12", label: t("hero.stats.states") },
+                 { value: "500+", label: t("hero.stats.oral") }
                ].map((stat, i) => (
                  <div key={i} className="p-6 bg-white/5 rounded-lg border border-white/10 hover:bg-white/10 transition-colors">
                    <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">{stat.value}</div>
+                   <div className="text-sm text-white/60 uppercase tracking-wider">{stat.label}</div>
                  </div>
                ))}
             </div>
