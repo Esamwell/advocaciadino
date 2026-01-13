@@ -21,7 +21,7 @@ export function About() {
                />
                <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 pt-20">
                   <p className="text-white font-serif text-xl font-bold">Dr. Dinoermeson Nascimento</p>
-                  <p className="text-white/80 text-sm tracking-wide uppercase">Sócio Fundador • OAB/BA nº 36.408</p>
+                  <p className="text-white/80 text-sm tracking-wide uppercase">Sócio Fundador</p>
                </div>
             </div>
           </div>

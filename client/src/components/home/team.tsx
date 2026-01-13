@@ -9,7 +9,6 @@ export function Team() {
     {
       name: t("team.dinoermeson.name"),
       role: t("team.dinoermeson.role"),
-      oab: "OAB/BA nº 36.408",
       description: t("team.dinoermeson.description"),
       achievements: [
         t("team.dinoermeson.achievement1"),
@@ -64,9 +63,6 @@ export function Team() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-serif font-bold text-primary mb-1">{member.name}</h3>
                     <p className="text-secondary font-medium mb-1">{member.role}</p>
-                    {member.oab && (
-                      <p className="text-sm text-muted-foreground">{member.oab}</p>
-                    )}
                   </div>
                 </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{member.description}</p>

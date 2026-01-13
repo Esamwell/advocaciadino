@@ -26,7 +26,7 @@ export function Hero() {
             {/* Left Column - Text Content */}
             <div className="lg:col-span-7 text-center lg:text-left">
               <div className="inline-block mb-6 px-4 py-1.5 bg-secondary/20 border border-secondary/40 rounded-full backdrop-blur-sm">
-                <span className="text-secondary font-semibold text-xs md:text-sm tracking-wider uppercase">Excelência Jurídica • OAB/BA nº 36.408</span>
+                <span className="text-secondary font-semibold text-xs md:text-sm tracking-wider uppercase">Excelência Jurídica</span>
               </div>
               
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white leading-[1.1] mb-5 md:mb-6 drop-shadow-lg">

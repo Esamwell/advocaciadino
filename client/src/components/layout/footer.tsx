@@ -65,7 +65,6 @@ export function Footer() {
               <div>
                 <p className="text-xs text-white/50 uppercase tracking-widest mb-1">Telefone</p>
                 <p className="font-medium hover:text-secondary transition-colors cursor-pointer">(71) XXXX-XXXX</p>
-                <p className="text-xs text-white/60 mt-1">OAB/BA nº 36.408</p>
               </div>
             </div>
             <div className="flex items-start gap-4">

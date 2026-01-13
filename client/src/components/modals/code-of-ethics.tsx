@@ -127,9 +127,6 @@ export function CodeOfEthicsModal({ open, onOpenChange }: CodeOfEthicsModalProps
                 Este código reflete nosso compromisso com a ética profissional e está em conformidade 
                 com o Código de Ética e Disciplina da OAB e demais normas aplicáveis.
               </p>
-              <p className="text-xs text-muted-foreground italic mt-2">
-                OAB/BA nº 36.408
-              </p>
             </div>
           </div>
         </ScrollArea>

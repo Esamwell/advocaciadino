@@ -28,7 +28,6 @@ export function Contact() {
                 <div>
                   <h4 className="font-serif font-bold text-primary text-lg">{t("contact.phone")}</h4>
                   <p className="text-muted-foreground">(71) XXXX-XXXX</p>
-                  <p className="text-sm text-muted-foreground/80 mt-1">OAB/BA nº 36.408</p>
                 </div>
               </div>
 
