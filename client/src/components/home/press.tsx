@@ -3,32 +3,32 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Newspaper } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const pressItems = [
-  {
-    title: "Atuação em Caso de Grande Repercussão",
-    source: "Jornal da Bahia",
-    date: "2024",
-    excerpt: "Advogado Dinoermeson Nascimento atua em caso de grande repercussão envolvendo direitos fundamentais...",
-    category: "Direito Penal",
-  },
-  {
-    title: "Defesa de Agentes de Segurança Pública",
-    source: "Tribuna da Bahia",
-    date: "2024",
-    excerpt: "Escritório destaca-se na defesa técnica de policiais militares em processos administrativos e judiciais...",
-    category: "Direito Militar",
-  },
-  {
-    title: "Tribunal do Júri: Experiência e Técnica",
-    source: "Revista Jurídica",
-    date: "2023",
-    excerpt: "Com mais de 100 julgamentos realizados, escritório consolida experiência em Tribunal do Júri...",
-    category: "Tribunal do Júri",
-  },
-];
-
 export function Press() {
   const { t } = useLanguage();
+  
+  const pressItems = [
+    {
+      title: "Atuação em Caso de Grande Repercussão",
+      source: "Jornal da Bahia",
+      date: "2024",
+      excerpt: "Advogado Dinoermeson Nascimento atua em caso de grande repercussão envolvendo direitos fundamentais...",
+      category: t("press.categories.criminal"),
+    },
+    {
+      title: "Defesa de Agentes de Segurança Pública",
+      source: "Tribuna da Bahia",
+      date: "2024",
+      excerpt: "Escritório destaca-se na defesa técnica de policiais militares em processos administrativos e judiciais...",
+      category: t("press.categories.military"),
+    },
+    {
+      title: "Tribunal do Júri: Experiência e Técnica",
+      source: "Revista Jurídica",
+      date: "2023",
+      excerpt: "Com mais de 100 julgamentos realizados, escritório consolida experiência em Tribunal do Júri...",
+      category: t("press.categories.jury"),
+    },
+  ];
   
   return (
     <section id="press" className="py-20 md:py-24 bg-background">

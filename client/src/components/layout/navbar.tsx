@@ -38,16 +38,16 @@ export function Navbar() {
   ];
 
   const practiceAreas = [
-    { name: "Direito Penal", href: "/areas-de-atuacao" },
-    { name: "Direito Penal Militar", href: "/areas-de-atuacao" },
-    { name: "Tribunal do Júri", href: "/tribunal-do-juri" },
-    { name: "Tribunais Superiores", href: "/tribunais-superiores" },
-    { name: "Civil e Empresarial", href: "/areas-de-atuacao" },
-    { name: "Direito Tributário", href: "/areas-de-atuacao" },
-    { name: "Direito do Trabalho", href: "/areas-de-atuacao" },
-    { name: "Direito do Consumidor", href: "/areas-de-atuacao" },
-    { name: "Família Empresarial", href: "/areas-de-atuacao" },
-    { name: "Público Municipal e Estadual", href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.criminal"), href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.military"), href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.jury"), href: "/tribunal-do-juri" },
+    { name: t("nav.superiorCourts"), href: "/tribunais-superiores" },
+    { name: t("practiceAreas.civil"), href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.tax"), href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.labor"), href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.consumer"), href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.family"), href: "/areas-de-atuacao" },
+    { name: t("practiceAreas.public"), href: "/areas-de-atuacao" },
   ];
 
   return (

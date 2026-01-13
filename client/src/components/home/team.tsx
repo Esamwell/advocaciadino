@@ -2,34 +2,34 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Award, GraduationCap, Users, BookOpen } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const teamMembers = [
-  {
-    name: "Dr. Dinoermeson Tiago dos Santos Nascimento",
-    role: "Advogado • Sócio Fundador",
-    oab: "OAB/BA nº 36.408",
-    description: "Quase duas décadas de experiência profissional. Especialista em Direito Penal, Processo Penal, Direito Penal Militar, Processo Penal Militar e Medicina Legal.",
-    achievements: [
-      "Professor de Direito Penal, Processo Penal, Direito Penal Militar, Processo Penal Militar e Medicina Legal",
-      "Presidente da Comissão de Apoio à Advocacia Militar e Estudos Jurídicos da OAB/BA",
-      "Ex-Vice-Presidente da Comissão Especial de Direito Militar da OAB/BA",
-      "Ex-membro da Comissão de Direitos Humanos da OAB/BA"
-    ]
-  },
-  {
-    name: "Dr. Ailton Nascimento Júnior",
-    role: "Advogado • Sócio",
-    description: "Pós-graduado em Direito Militar. Atuação estratégica nas áreas cível, empresarial e trabalhista.",
-    achievements: [
-      "Pós-graduado em Direito Militar",
-      "Foco em demandas de alta complexidade",
-      "Especialista em Justiça Militar",
-      "Defesa de agentes de segurança pública"
-    ]
-  }
-];
-
 export function Team() {
   const { t } = useLanguage();
+  
+  const teamMembers = [
+    {
+      name: t("team.dinoermeson.name"),
+      role: t("team.dinoermeson.role"),
+      oab: "OAB/BA nº 36.408",
+      description: t("team.dinoermeson.description"),
+      achievements: [
+        t("team.dinoermeson.achievement1"),
+        t("team.dinoermeson.achievement2"),
+        t("team.dinoermeson.achievement3"),
+        t("team.dinoermeson.achievement4")
+      ]
+    },
+    {
+      name: t("team.ailton.name"),
+      role: t("team.ailton.role"),
+      description: t("team.ailton.description"),
+      achievements: [
+        t("team.ailton.achievement1"),
+        t("team.ailton.achievement2"),
+        t("team.ailton.achievement3"),
+        t("team.ailton.achievement4")
+      ]
+    }
+  ];
   
   return (
     <section id="team" className="py-20 md:py-24 bg-background">

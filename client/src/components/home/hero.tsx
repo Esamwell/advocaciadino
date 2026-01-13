@@ -58,19 +58,19 @@ export function Hero() {
               <div className="grid grid-cols-2 gap-3 md:gap-4">
                 <div className="bg-white/15 backdrop-blur-md rounded-lg p-5 md:p-6 border border-white/30 shadow-lg hover:bg-white/20 transition-all duration-300">
                   <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-2 leading-none">20+</div>
-                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">Anos de Experiência</div>
+                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">{t("hero.stats.years")}</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-md rounded-lg p-5 md:p-6 border border-white/30 shadow-lg hover:bg-white/20 transition-all duration-300">
                   <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-2 leading-none">100+</div>
-                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">Júris Realizados</div>
+                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">{t("hero.stats.juries")}</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-md rounded-lg p-5 md:p-6 border border-white/30 shadow-lg hover:bg-white/20 transition-all duration-300">
                   <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-2 leading-none">12</div>
-                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">Estados de Atuação</div>
+                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">{t("hero.stats.states")}</div>
                 </div>
                 <div className="bg-white/15 backdrop-blur-md rounded-lg p-5 md:p-6 border border-white/30 shadow-lg hover:bg-white/20 transition-all duration-300">
                   <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-2 leading-none">500+</div>
-                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">Sustentações Orais</div>
+                  <div className="text-[10px] md:text-xs text-white/90 uppercase tracking-wider font-medium">{t("hero.stats.oral")}</div>
                 </div>
               </div>
             </div>

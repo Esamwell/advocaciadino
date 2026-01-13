@@ -17,7 +17,13 @@
     "subtitle": "SALVADOR • BAHIA",
     "description": "Defensa intransigente de las garantías constitucionales, la legalidad y la dignidad humana. Actuación estratégica, técnica y personalizada.",
     "cta": "Solicitar Consulta",
-    "learnMore": "Conocer Más"
+    "learnMore": "Conocer Más",
+    "stats": {
+      "years": "Años de Experiencia",
+      "juries": "Juicios Realizados",
+      "states": "Estados de Operación",
+      "oral": "Sustentaciones Orales"
+    }
   },
   "about": {
     "title": "El Despacho",
@@ -44,15 +50,62 @@
     "subtitle": "Socios y Cuerpo Jurídico",
     "description": "El Despacho Dinoermeson Nascimento cuenta con un cuerpo jurídico multidisciplinario y especialista, ofreciendo atención directa por los socios responsables en cada caso.",
     "multidisciplinary": "Cuerpo Jurídico Multidisciplinario",
-    "multidisciplinaryText": "Nuestro equipo técnico está compuesto por profesionales especializados en diversas áreas del derecho, garantizando una visión completa y estratégica para cada caso. Trabajamos de forma integrada para ofrecer soluciones jurídicas efectivas y personalizadas."
+    "multidisciplinaryText": "Nuestro equipo técnico está compuesto por profesionales especializados en diversas áreas del derecho, garantizando una visión completa y estratégica para cada caso. Trabajamos de forma integrada para ofrecer soluciones jurídicas efectivas y personalizadas.",
+    "dinoermeson": {
+      "name": "Dr. Dinoermeson Tiago dos Santos Nascimento",
+      "role": "Abogado • Socio Fundador",
+      "description": "Casi dos décadas de experiencia profesional. Especialista en Derecho Penal, Proceso Penal, Derecho Penal Militar, Proceso Penal Militar y Medicina Legal.",
+      "achievement1": "Profesor de Derecho Penal, Proceso Penal, Derecho Penal Militar, Proceso Penal Militar y Medicina Legal",
+      "achievement2": "Presidente de la Comisión de Apoyo a la Abogacía Militar y Estudios Jurídicos de la OAB/BA",
+      "achievement3": "Ex Vicepresidente de la Comisión Especial de Derecho Militar de la OAB/BA",
+      "achievement4": "Ex miembro de la Comisión de Derechos Humanos de la OAB/BA"
+    },
+    "ailton": {
+      "name": "Dr. Ailton Nascimento Júnior",
+      "role": "Abogado • Socio",
+      "description": "Posgraduado en Derecho Militar. Actuación estratégica en áreas civil, empresarial y laboral.",
+      "achievement1": "Posgraduado en Derecho Militar",
+      "achievement2": "Enfoque en demandas de alta complejidad",
+      "achievement3": "Especialista en Justicia Militar",
+      "achievement4": "Defensa de agentes de seguridad pública"
+    }
   },
   "practiceAreas": {
     "title": "Áreas de Práctica",
-    "description": "Actuación multidisciplinaria y especializada para ofrecer soluciones jurídicas completas y efectivas."
+    "description": "Actuación multidisciplinaria y especializada para ofrecer soluciones jurídicas completas y efectivas.",
+    "criminal": "Derecho Penal",
+    "military": "Derecho Penal Militar",
+    "jury": "Tribunal del Jurado",
+    "civil": "Derecho Civil y Empresarial",
+    "tax": "Derecho Tributario",
+    "labor": "Derecho del Trabajo",
+    "consumer": "Derecho del Consumidor",
+    "family": "Derecho de Familia Empresarial",
+    "public": "Derecho Público Municipal y Estatal"
   },
   "superiorCourts": {
     "title": "Tribunales Superiores",
-    "description": "Actuación especializada ante el Supremo Tribunal Federal (STF) y Superior Tribunal de Justicia (STJ), con experiencia en recursos especiales, recursos extraordinarios y acciones de naturaleza constitucional."
+    "description": "Actuación especializada ante el Supremo Tribunal Federal (STF) y Superior Tribunal de Justicia (STJ), con experiencia en recursos especiales, recursos extraordinarios y acciones de naturaleza constitucional.",
+    "heading": "Actuación ante STF y STJ",
+    "stf": {
+      "title": "Supremo Tribunal Federal (STF)",
+      "description": "Actuación en recursos extraordinarios, acciones directas de inconstitucionalidad, habeas corpus y demás procesos de competencia del STF.",
+      "item1": "Sustentaciones orales ante el Plenario",
+      "item2": "Habeas Corpus en casos de gran repercusión",
+      "item3": "Recursos Constitucionales"
+    },
+    "stj": {
+      "title": "Superior Tribunal de Justicia (STJ)",
+      "description": "Actuación en recursos especiales, habeas corpus y demás procesos de competencia del STJ, con enfoque en la uniformización de la jurisprudencia y protección de derechos fundamentales.",
+      "item1": "Sustentaciones orales exitosas",
+      "item2": "Reversión de decisiones desfavorables",
+      "item3": "Reconocimiento de nulidades procesales"
+    },
+    "cta": {
+      "title": "Protección de Derechos Fundamentales",
+      "description": "Nuestra actuación en los Tribunales Superiores tiene como objetivo principal la protección de derechos fundamentales, la reversión de decisiones injustas y el reconocimiento de nulidades que violan garantías constitucionales.",
+      "button": "Contáctenos"
+    }
   },
   "jury": {
     "title": "Tribunal del Jurado y Abogacía de Plenario",
@@ -71,13 +124,27 @@
     "description": "El despacho tiene estructura y experiencia para atender grandes empresas nacionales e internacionales, ofreciendo asesoría jurídica estratégica y contenciosa con enfoque en resultados y eficiencia.",
     "cta": "Su Empresa Merece Excelencia Jurídica",
     "ctaText": "Contáctenos para conocer cómo podemos ayudar a su empresa con asesoría jurídica estratégica, litigio especializado y gestión de riesgos jurídicos.",
-    "button": "Solicitar Propuesta"
+    "button": "Solicitar Propuesta",
+    "areas": {
+      "civil": "Derecho Civil y Empresarial",
+      "tax": "Derecho Tributario",
+      "labor": "Derecho del Trabajo",
+      "consumer": "Derecho del Consumidor",
+      "family": "Derecho de Familia Empresarial",
+      "public": "Derecho Público Municipal y Estatal",
+      "compliance": "Gestión de Riesgo y Cumplimiento"
+    }
   },
   "press": {
     "title": "Prensa",
     "heading": "Reconocimiento y Visibilidad",
     "description": "La actuación profesional e institucional de Dinoermeson Tiago dos Santos Nascimento es frecuentemente seguida por la prensa, especialmente en casos de gran repercusión. Todo el contenido periodístico respeta estrictamente el secreto profesional y las normas de la OAB.",
-    "readMore": "Leer más"
+    "readMore": "Leer más",
+    "categories": {
+      "criminal": "Derecho Penal",
+      "military": "Derecho Militar",
+      "jury": "Tribunal del Jurado"
+    }
   },
   "contact": {
     "title": "Contacto",

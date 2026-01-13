@@ -17,7 +17,13 @@
     "subtitle": "SALVADOR • BAHIA",
     "description": "Intransigent defense of constitutional guarantees, legality and human dignity. Strategic, technical and personalized performance.",
     "cta": "Request Consultation",
-    "learnMore": "Learn More"
+    "learnMore": "Learn More",
+    "stats": {
+      "years": "Years of Experience",
+      "juries": "Jury Trials",
+      "states": "States of Operation",
+      "oral": "Oral Arguments"
+    }
   },
   "about": {
     "title": "About Us",
@@ -44,15 +50,62 @@
     "subtitle": "Partners and Legal Team",
     "description": "Dinoermeson Nascimento Law Firm has a multidisciplinary and specialist legal team, offering direct service by responsible partners in each case.",
     "multidisciplinary": "Multidisciplinary Legal Team",
-    "multidisciplinaryText": "Our technical team is composed of professionals specialized in various areas of law, ensuring a complete and strategic vision for each case. We work in an integrated way to offer effective and personalized legal solutions."
+    "multidisciplinaryText": "Our technical team is composed of professionals specialized in various areas of law, ensuring a complete and strategic vision for each case. We work in an integrated way to offer effective and personalized legal solutions.",
+    "dinoermeson": {
+      "name": "Dr. Dinoermeson Tiago dos Santos Nascimento",
+      "role": "Lawyer • Founding Partner",
+      "description": "Nearly two decades of professional experience. Specialist in Criminal Law, Criminal Procedure, Military Criminal Law, Military Criminal Procedure and Legal Medicine.",
+      "achievement1": "Professor of Criminal Law, Criminal Procedure, Military Criminal Law, Military Criminal Procedure and Legal Medicine",
+      "achievement2": "President of the Commission for Support to Military Advocacy and Legal Studies of OAB/BA",
+      "achievement3": "Former Vice-President of the Special Commission on Military Law of OAB/BA",
+      "achievement4": "Former member of the Human Rights Commission of OAB/BA"
+    },
+    "ailton": {
+      "name": "Dr. Ailton Nascimento Júnior",
+      "role": "Lawyer • Partner",
+      "description": "Postgraduate in Military Law. Strategic performance in civil, business and labor areas.",
+      "achievement1": "Postgraduate in Military Law",
+      "achievement2": "Focus on high complexity cases",
+      "achievement3": "Specialist in Military Justice",
+      "achievement4": "Defense of public security agents"
+    }
   },
   "practiceAreas": {
     "title": "Practice Areas",
-    "description": "Multidisciplinary and specialized performance to offer complete and effective legal solutions."
+    "description": "Multidisciplinary and specialized performance to offer complete and effective legal solutions.",
+    "criminal": "Criminal Law",
+    "military": "Military Criminal Law",
+    "jury": "Jury Court",
+    "civil": "Civil and Business Law",
+    "tax": "Tax Law",
+    "labor": "Labor Law",
+    "consumer": "Consumer Law",
+    "family": "Business Family Law",
+    "public": "Municipal and State Public Law"
   },
   "superiorCourts": {
     "title": "Superior Courts",
-    "description": "Specialized performance before the Federal Supreme Court (STF) and Superior Court of Justice (STJ), with expertise in special appeals, extraordinary appeals and actions of a constitutional nature."
+    "description": "Specialized performance before the Federal Supreme Court (STF) and Superior Court of Justice (STJ), with expertise in special appeals, extraordinary appeals and actions of a constitutional nature.",
+    "heading": "Performance before STF and STJ",
+    "stf": {
+      "title": "Federal Supreme Court (STF)",
+      "description": "Performance in extraordinary appeals, direct actions of unconstitutionality, habeas corpus and other processes under STF jurisdiction.",
+      "item1": "Oral arguments before the Plenary",
+      "item2": "Habeas Corpus in cases of great repercussion",
+      "item3": "Constitutional Appeals"
+    },
+    "stj": {
+      "title": "Superior Court of Justice (STJ)",
+      "description": "Performance in special appeals, habeas corpus and other processes under STJ jurisdiction, focusing on jurisprudence uniformity and protection of fundamental rights.",
+      "item1": "Successful oral arguments",
+      "item2": "Reversal of unfavorable decisions",
+      "item3": "Recognition of procedural nullities"
+    },
+    "cta": {
+      "title": "Protection of Fundamental Rights",
+      "description": "Our performance in Superior Courts has as its main objective the protection of fundamental rights, the reversal of unfair decisions and the recognition of nullities that violate constitutional guarantees.",
+      "button": "Contact Us"
+    }
   },
   "jury": {
     "title": "Jury Court & Plenary Advocacy",
@@ -71,13 +124,27 @@
     "description": "The firm has the structure and expertise to serve large national and international companies, offering strategic and contentious legal advisory with a focus on results and efficiency.",
     "cta": "Your Company Deserves Legal Excellence",
     "ctaText": "Contact us to learn how we can help your company with strategic legal advisory, specialized litigation and legal risk management.",
-    "button": "Request Proposal"
+    "button": "Request Proposal",
+    "areas": {
+      "civil": "Civil and Business Law",
+      "tax": "Tax Law",
+      "labor": "Labor Law",
+      "consumer": "Consumer Law",
+      "family": "Business Family Law",
+      "public": "Municipal and State Public Law",
+      "compliance": "Risk Management and Compliance"
+    }
   },
   "press": {
     "title": "Press",
     "heading": "Recognition and Visibility",
     "description": "The professional and institutional performance of Dinoermeson Tiago dos Santos Nascimento is frequently followed by the press, especially in cases of great repercussion. All journalistic content strictly respects professional secrecy and OAB standards.",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "categories": {
+      "criminal": "Criminal Law",
+      "military": "Military Law",
+      "jury": "Jury Court"
+    }
   },
   "contact": {
     "title": "Contact",

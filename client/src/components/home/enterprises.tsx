@@ -27,18 +27,20 @@ const services = [
   },
 ];
 
-const practiceAreas = [
-  "Direito Civil e Empresarial",
-  "Direito Tributário",
-  "Direito do Trabalho",
-  "Direito do Consumidor",
-  "Direito de Família Empresarial",
-  "Direito Público Municipal e Estadual",
-  "Gestão de Risco e Compliance",
-];
+// practiceAreas será definido dentro do componente para usar traduções
 
 export function Enterprises() {
   const { t } = useLanguage();
+  
+  const practiceAreas = [
+    t("enterprises.areas.civil"),
+    t("enterprises.areas.tax"),
+    t("enterprises.areas.labor"),
+    t("enterprises.areas.consumer"),
+    t("enterprises.areas.family"),
+    t("enterprises.areas.public"),
+    t("enterprises.areas.compliance"),
+  ];
   
   return (
     <section id="enterprises" className="py-20 md:py-24 bg-muted/30">
