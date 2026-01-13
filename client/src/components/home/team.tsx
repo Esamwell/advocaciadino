@@ -1,0 +1,97 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Award, GraduationCap, Users, BookOpen } from "lucide-react";
+
+const teamMembers = [
+  {
+    name: "Dr. Dinoermeson Tiago dos Santos Nascimento",
+    role: "Advogado • Sócio Fundador",
+    oab: "OAB/BA nº 36.408",
+    description: "Quase duas décadas de experiência profissional. Especialista em Direito Penal, Processo Penal, Direito Penal Militar, Processo Penal Militar e Medicina Legal.",
+    achievements: [
+      "Professor de Direito Penal, Processo Penal, Direito Penal Militar, Processo Penal Militar e Medicina Legal",
+      "Presidente da Comissão de Apoio à Advocacia Militar e Estudos Jurídicos da OAB/BA",
+      "Ex-Vice-Presidente da Comissão Especial de Direito Militar da OAB/BA",
+      "Ex-membro da Comissão de Direitos Humanos da OAB/BA"
+    ]
+  },
+  {
+    name: "Dr. Ailton Nascimento Júnior",
+    role: "Advogado • Sócio",
+    description: "Pós-graduado em Direito Militar. Atuação estratégica nas áreas cível, empresarial e trabalhista.",
+    achievements: [
+      "Pós-graduado em Direito Militar",
+      "Foco em demandas de alta complexidade",
+      "Especialista em Justiça Militar",
+      "Defesa de agentes de segurança pública"
+    ]
+  }
+];
+
+export function Team() {
+  return (
+    <section id="team" className="py-20 md:py-24 bg-background">
+      <div className="container px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
+          <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Nossa Equipe</span>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">Sócios e Corpo Jurídico</h2>
+          <div className="w-24 h-1 bg-secondary mx-auto mb-4 md:mb-6" />
+          <p className="text-muted-foreground text-base md:text-lg">
+            A Advocacia Dinoermeson Nascimento conta com um corpo jurídico multidisciplinar e especialista, 
+            oferecendo atendimento direto pelos sócios responsáveis em cada caso.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
+          {teamMembers.map((member, index) => (
+            <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  {index === 0 ? (
+                    <div className="w-24 h-24 rounded-lg overflow-hidden bg-primary/10 flex-shrink-0 shadow-md">
+                      <img 
+                        src="/drdino2.jpg" 
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-24 h-24 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                      <Users className="w-12 h-12 text-secondary" />
+                    </div>
+                  )}
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-serif font-bold text-primary mb-1">{member.name}</h3>
+                    <p className="text-secondary font-medium mb-1">{member.role}</p>
+                    {member.oab && (
+                      <p className="text-sm text-muted-foreground">{member.oab}</p>
+                    )}
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-6 leading-relaxed">{member.description}</p>
+                <div className="space-y-3">
+                  {member.achievements.map((achievement, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <Award className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-foreground">{achievement}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        <div className="bg-muted/50 rounded-lg p-8 text-center">
+          <GraduationCap className="w-12 h-12 text-secondary mx-auto mb-4" />
+          <h3 className="text-xl font-serif font-bold text-primary mb-3">Corpo Jurídico Multidisciplinar</h3>
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Nossa equipe técnica é composta por profissionais especializados em diversas áreas do direito, 
+            garantindo uma visão completa e estratégica para cada caso. Trabalhamos de forma integrada 
+            para oferecer soluções jurídicas eficazes e personalizadas.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+

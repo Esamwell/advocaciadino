@@ -5,16 +5,16 @@ import { Phone, Mail, MapPin, Clock, MessageSquare, Send } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 bg-muted/30">
+    <section id="contact" className="py-20 md:py-24 bg-muted/30">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16">
           {/* Contact Info */}
           <div>
             <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Contato</span>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold text-primary mb-4 md:mb-6">
               Estamos prontos para defender seus interesses.
             </h2>
-            <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
+            <p className="text-muted-foreground text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
               Entre em contato para agendar um atendimento especializado. Nossa equipe retornará seu contato o mais breve possível.
             </p>
 
@@ -24,9 +24,9 @@ export function Contact() {
                   <Phone className="w-6 h-6 text-secondary" />
                 </div>
                 <div>
-                  <h4 className="font-serif font-bold text-primary text-lg">Telefones</h4>
-                  <p className="text-muted-foreground">+55 11 3473-8051</p>
-                  <p className="text-muted-foreground">+55 11 3562-5998</p>
+                  <h4 className="font-serif font-bold text-primary text-lg">Telefone</h4>
+                  <p className="text-muted-foreground">(71) XXXX-XXXX</p>
+                  <p className="text-sm text-muted-foreground/80 mt-1">OAB/BA nº 36.408</p>
                 </div>
               </div>
 
@@ -37,6 +37,7 @@ export function Contact() {
                 <div>
                   <h4 className="font-serif font-bold text-primary text-lg">E-mail</h4>
                   <p className="text-muted-foreground">contato@advocaciadn.com.br</p>
+                  <p className="text-sm text-muted-foreground/80 mt-1">Atendimento mediante prévio agendamento</p>
                 </div>
               </div>
 
@@ -47,8 +48,11 @@ export function Contact() {
                 <div>
                   <h4 className="font-serif font-bold text-primary text-lg">Localização</h4>
                   <p className="text-muted-foreground">
-                    Av. Ibirapuera, 2120, 20º Andar<br />
-                    Moema, São Paulo-SP
+                    Salvador • Bahia<br />
+                    Brasil
+                  </p>
+                  <p className="text-sm text-muted-foreground/80 mt-1">
+                    Site: www.advocaciadn.com.br
                   </p>
                 </div>
               </div>
